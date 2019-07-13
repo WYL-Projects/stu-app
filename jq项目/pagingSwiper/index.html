@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.turn-page {
+			font-size: 0;
+			margin: 20px;
+			position: absolute;
+			right: 0;
+		}
+		.turn-page li{
+			font-size: 14px;
+			display: inline-block;
+			padding: 5px 10px;
+			border: 1px solid #646987;
+			cursor: pointer;
+		}
+		.turn-page li.cur-page {
+			background: #5CB85C;
+			color: white;
+		}
+	</style>
+	<body>
+		<div class="turn-page">
+			
+		</div>
+		<script src="jquery-3.4.0.js"></script>
+		<script src="index.js"></script>
+		<script>
+			//封装翻页插件
+			$('.turn-page').turnPage({
+				curPage:5,
+				allPage:10,
+				changePage: function (page){
+					console.log(page);
+				}
+			})
+		</script>
+	</body>
+</html>

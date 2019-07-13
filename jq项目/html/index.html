@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="../css/index.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="../images/logo.png" alt="">
+				<span class="logoItem">渡一教育</span>
+			</div>
+			<div class="content">
+				<div class="left">
+					<dl class="stuManage">
+						<dt>学生管理</dt>
+						<dd class="stuList active">学生列表</dd>
+						<dd class="addStu">新增学生</dd>
+					</dl>
+				</div>
+				<div class="right">
+					<div class="addStudent content1">
+						<form id="editForm">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><label for="name">姓名</label></td>
+									<td><input type="text" name="name"></td>
+								</tr>
+								<tr>
+									<td><label for="sex">性别</label></td>
+									<td>
+										<input type="radio" value="0" name="sex" checked>男
+										<input type="radio" value="1" name="sex" >女
+									</td>
+								</tr>
+								<tr>
+									<td><label for="sNo">学号</label></td>
+									<td>
+										<input type="text" name="sNo">
+									</td>
+								</tr>
+								<tr>
+									<td><label for="email">邮箱</label></td>
+									<td>
+										<input type="text" name="email">
+									</td>
+								</tr>
+								<tr>
+									<td><label for="birth">出生年</label></td>
+									<td>
+										<input type="text" name="birth">
+									</td>
+								</tr>
+								<tr>
+									<td><label for="phone">手机号</label></td>
+									<td>
+										<input type="text" name="phone">
+									</td>
+								</tr>
+								<tr>
+									<td><label for="address">住址</label></td>
+									<td>
+										<input type="text" name="address">
+									</td>
+								</tr>
+							</table>
+							<div class="Btn">
+								<input type="submit" id="addStu" class="commit" value="提交" />
+								<input type="reset" value="重置" />
+							</div>
+						</form>
+					</div>
+					<div class="studentList content1">
+						<div class="search-bar">
+							<label for="search-word">关键字搜索</label>
+							<input type="text" id="search-word">
+							<button type="button" class="search-submit" id="search-submit">搜索</button>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<td>学号</td>
+									<td>姓名</td>
+									<td>性别</td>
+									<td>邮箱</td>
+									<td>年龄</td>
+									<td>手机号</td>
+									<td>住址</td>
+									<td>操作</td>
+								</tr>
+							</thead>
+							<tbody class="dataTbody">
+								<tr>
+									<td>0899080909</td>
+									<td>4231412424</td>
+									<td>男</td>
+									<td>414144242qq.com</td>
+									<td>34</td>
+									<td>43432543525</td>
+									<td>35423465432666</td>
+									<td>
+										<button class="btn edit">编辑</button>
+										<button class="btn del">删除</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<ul class="turn-page">
+							<li class="lastPage">上一页</li>
+							<!-- 自动生成li 默认123-->
+							<li class="pageNum">1</li>
+							<li class="pageNum">2</li>
+							<li class="pageNum">3</li>
+							<!-- 点击展现后面 前提是有-->
+							<li id="slh">···</li>
+							<li class="nextPage">下一页</li>
+						</ul>
+						<div class="mosk">
+							<div class="studentForm">
+								<h3>编辑信息</h3>
+								<form id="editForm">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><label for="name">姓名</label></td>
+											<td><input type="text" name="name"></td>
+										</tr>
+										<tr>
+											<td><label for="sex">性别</label></td>
+											<td>
+												<input type="radio" checked="checked" name="sex">男
+												<input type="radio" name="sex">女
+											</td>
+										</tr>
+										<tr>
+											<td><label for="sNo">学号</label></td>
+											<td>
+												<input type="text" name="sNo">
+											</td>
+										</tr>
+										<tr>
+											<td><label for="email">邮箱</label></td>
+											<td>
+												<input type="text" name="email">
+											</td>
+										</tr>
+										<tr>
+											<td><label for="birth">出生年</label></td>
+											<td>
+												<input type="text" name="birth">
+											</td>
+										</tr>
+										<tr>
+											<td><label for="phone">手机号</label></td>
+											<td>
+												<input type="text" name="phone">
+											</td>
+										</tr>
+										<tr>
+											<td><label for="address">住址</label></td>
+											<td>
+												<input type="text" name="address">
+											</td>
+										</tr>
+									</table>
+									<div class="Btn">
+										<input type="submit" id="addStu" class="commit" value="提交" />
+										<input type="reset" value="重置" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+		<script src="../js/jquery-3.4.0.js"></script>
+		<script src="../js/studentList.js"></script>	
+	</body>
+</html>
